@@ -1,9 +1,21 @@
-from re import A
+testcase = int(input())
 
+for k in range(testcase):
+    a = list(input())
+    a.append('X')
 
-a = list(map(int, input().split()))
-sum = 0
-for i in a:
-    SUM += i**2
+    cnt = 0
+    olist = []
+    score = 0
 
-print(sum % 10)
+    for i in a:
+        if i == 'O':
+            olist.append(i)
+        elif i == 'X':
+            for j in range(1, len(olist)+1):
+                score += j
+                olist = []
+
+    print(score)
+
+# 48분 42초 소요
