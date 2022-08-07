@@ -19,3 +19,4 @@ for k in range(testcase):
     print(score)
 
 # 48분 42초 소요
+# 멋져!
