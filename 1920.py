@@ -20,3 +20,6 @@ def binarySearch(a, N, key):
 
 for i in b_list:
     print(binarySearch(a_list, a_num, i))
+
+
+# if문으로 했을 때 시간초과가 많이 떠 이진검색법으로
