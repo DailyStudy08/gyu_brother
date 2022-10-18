@@ -7,8 +7,6 @@ for i in range(N-1):
     arr[i+1] += arr[i]
 arr = [0]+arr
 
-print(arr)
-
 for _ in range(M):
     i, j = map(int, sys.stdin.readline().split())
-    print(arr[j+1]-arr[i])
+    print(arr[j]-arr[i-1])
